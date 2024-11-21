@@ -1,0 +1,203 @@
+/* Reset */
+body, ul, h1, p, blockquote, cite {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #e8ecf0, #ffffff);
+  color: #333;
+}
+
+/* Header Styles */
+.header {
+  background: 
+    radial-gradient(circle, #ffffff 25%, rgba(255, 255, 255, 0) 70%), 
+    linear-gradient(to top, #b9babe 5%, #e8e8e8 85%, #ffffff);
+  border-bottom: 1px solid #ddd;
+  padding: 20px 40px;
+  font-family: 'Roboto', sans-serif;
+  width: 100vw; 
+  transform: translateX(-9px);
+  border-bottom-left-radius: 30px; 
+  border-bottom-right-radius: 30px; 
+  box-sizing: border-box; 
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 95px;
+  height: auto;
+  margin-right: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave debajo del logo */
+  border-radius: 45%; /* Opcional: redondear si el logo tiene un fondo circular */
+}
+
+.brand-title {
+  font-size: 45px;
+  font-weight: bold;
+  color: #22376B;
+}
+.brand-text{
+  font-size: 17px;
+}
+
+/* Estilo para la barra de navegación */
+.navbar {
+  background: transparent;
+  border-bottom: none; /* Línea inferior */
+  padding: 10px 40px; /* Espaciado */
+}
+
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .nav-links li {
+  margin: 0 15px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #000000; /* Color negro para todos los enlaces */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #0056b3; /* Color azul oscuro al pasar el cursor */
+}
+
+/* Estilo específico para el botón "Inicio" */
+.navbar .nav-links .btn-nav {
+  background-color: #22376B; /* Color de fondo azul oscuro */
+  color: #ffffff; /* Texto blanco */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 20px; /* Bordes redondeados */
+  text-decoration: none;
+  font-size: 14px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+  transition: all 0.3s ease;
+}
+
+/* Estilo del botón "Inicio" en hover */
+.nav-links .btn-nav:hover {
+  background-color: #0056b3; /* Color más oscuro al pasar el cursor */
+  color: #ffffff; /* Mantiene el texto blanco */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4); /* Sombra más profunda */
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.welcome-text {
+  max-width: 50%;
+}
+
+.welcome-text h2 {
+  font-size: 23px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.welcome-text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.welcome-text blockquote {
+  font-style: italic;
+  font-size: 22px;
+  margin: 10px 0;
+  color: #777;
+}
+
+.welcome-text cite {
+  font-size: 18px;
+  color: #777;
+}
+
+/* Contenedor principal de los botones */
+.buttons-container {
+  display: flex;
+  gap: 20px; /* Espaciado entre los botones */
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Botón "Conócenos" */
+.btn-rounded {
+  background-color: #153e85;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  text-decoration: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.btn-rounded:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Contenedor específico para el botón "¡Únetenos!" */
+.btn-join {
+  display: flex;
+  align-items: center;
+}
+
+/* Botón "¡Únetenos!" */
+.btn-outline {
+  background-color: transparent;
+  color: #22376B;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  color: #0056b3;
+}
+
+/* Ícono circular */
+.icon-circle {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #22376B;
+  border-radius: 50%;
+}
+
+.icon-circle img {
+  width: 10px;
+  height: 10px;
+  fill: #fff;
+}
