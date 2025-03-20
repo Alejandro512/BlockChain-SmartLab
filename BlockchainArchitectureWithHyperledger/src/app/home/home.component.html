@@ -1,72 +1,93 @@
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+  rel="stylesheet"
+/>
 <div class="home-container">
   <header class="header">
     <div class="container">
       <div class="logo-section">
-        <a href=""> <!-- colocar el link de la pagina web de SmartLab -->
-          <svg width="97" height="auto" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo"
-            style="margin-left: 65px;">
+        <a href="">
+          <!-- colocar el link de la pagina web de SmartLab -->
+          <svg
+            width="97"
+            height="auto"
+            viewBox="0 0 91 91"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="logo"
+            style="margin-left: 30px"
+          >
             <path
               d="M45.5 91C70.629 91 91 70.629 91 45.5C91 20.371 70.629 0 45.5 0C20.371 0 0 20.371 0 45.5C0 70.629 20.371 91 45.5 91Z"
-              fill="#22376B" />
+              fill="#22376B"
+            />
             <path
               d="M61.1883 75.8333C68.1273 75.8333 73.7524 70.2082 73.7524 63.2693C73.7524 56.3303 68.1273 50.7052 61.1883 50.7052C54.2494 50.7052 48.6243 56.3303 48.6243 63.2693C48.6243 70.2082 54.2494 75.8333 61.1883 75.8333Z"
-              fill="#AADDFF" />
+              fill="#AADDFF"
+            />
             <path
               d="M20.9239 18.849C16.0159 23.757 16.0159 31.7104 20.9239 36.6183C25.8318 41.5262 25.8318 49.4796 20.9239 54.3876C16.0159 59.2955 16.0159 67.2489 20.9239 72.1568C25.8318 77.0648 33.7852 77.0648 38.6931 72.1568C43.6011 67.2489 43.6011 59.2955 38.6931 54.3876C33.7852 49.4796 33.7852 41.5262 38.6931 36.6183C43.6011 31.7104 43.6011 23.757 38.6931 18.849C33.7852 13.9411 25.8318 13.9411 20.9239 18.849Z"
-              fill="white" />
+              fill="white"
+            />
             <path
               d="M55.5525 28.8167C55.5525 31.3283 57.5909 33.3667 60.1025 33.3667C62.6141 33.3667 64.6525 35.4051 64.6525 37.9167C64.6525 40.4283 66.6909 42.4667 69.2025 42.4667C71.7141 42.4667 73.7525 40.4283 73.7525 37.9167C73.7525 35.4051 71.7141 33.3667 69.2025 33.3667C66.6909 33.3667 64.6525 31.3283 64.6525 28.8167C64.6525 26.3051 62.6141 24.2667 60.1025 24.2667C57.5909 24.2667 55.5525 26.3051 55.5525 28.8167Z"
-              fill="white" />
+              fill="white"
+            />
             <path
               d="M51.0024 24.2667C53.5153 24.2667 55.5524 22.2296 55.5524 19.7167C55.5524 17.2038 53.5153 15.1667 51.0024 15.1667C48.4895 15.1667 46.4524 17.2038 46.4524 19.7167C46.4524 22.2296 48.4895 24.2667 51.0024 24.2667Z"
-              fill="#AADDFF" />
+              fill="#AADDFF"
+            />
           </svg>
         </a>
         <div>
           <h1 class="brand-title">Smart Lab</h1>
-          <p class="brand-text">Laboratorio de Ciberseguridad, IoT </p>
+          <p class="brand-text">Laboratorio de Ciberseguridad, IoT</p>
           <p class="brand-text">y Ciudades Inteligentes</p>
-
         </div>
       </div>
       <nav class="navbar">
         <ul class="nav-links">
           <li><a href="#" class="btn-nav">Inicio</a></li>
-          <li><a href="estadisticas">Estadísticas</a></li>
-          <li><a (click)="redirectTo('acercaDe')">Acerca de</a></li>
+          <li><a href="estadisticas" class="btn-nav-disabled">Estadísticas</a></li>
+          <li><a (click)="redirectTo('acercaDe')" class="btn-nav-disabled">Acerca de</a></li>
         </ul>
       </nav>
-
     </div>
     <div class="title-proyect">
-      <h1 >Blockchain architecture with Hyperledger Fabric, MQTT protocol</h1>
-      <p>El proyecto se basas en la creación de una arquitectura para blockchien que recopila y
-        almacena datos abiertos de un sensor UV.</p>
+      <h1>Blockchain architecture with Hyperledger Fabric, MQTT protocol</h1>
+      <p>
+        El proyecto se basas en la creación de una arquitectura para blockchien
+        que recopila y almacena datos abiertos de un sensor UV.
+      </p>
     </div>
   </header>
-  <section class="card-section">
+  <div class="card-section">
     <div class="card-container">
       <!-- Tarjeta de Datos recopilados y almacenados en la Blockchain -->
       <div class="project-card">
-        <img src="../../assets/img/Blockchain.jpeg" alt="Imagen de Blockchain" class="project-card__image" />
+        <img
+          src="../../assets/img/Blockchain.jpeg"
+          alt="Imagen de Blockchain"
+          class="project-card__image"
+        />
         <div class="project-card__info">
           <h2 class="project-card__title">
             Datos recopilados y almacenados en la Blockchain
           </h2>
           <p class="project-card__description">
-            Acceso a los datos que se han recopilado a través del sensor UV
-            y almacenados en el servidor para su visualización y filtrado.
+            Acceso a los datos que se han recopilado a través del sensor UV y
+            almacenados en el servidor para su visualización y filtrado.
           </p>
-          <a  href="estadisticas" class="project-card__button">
-            Ver Estadísticas
-          </a>
+          <div class="project-card__button_container">
+            <a href="estadisticas" class="project-card__button">
+              Ver Estadísticas
+            </a>
+          </div>
         </div>
       </div>
       <!-- Fin de la Tarjeta -->
     </div>
-  </section>
-
+  </div>
 
   <!-- FOTTER -->
 
@@ -80,7 +101,12 @@
     <footer class="top">
       <div class="smlab-info">
         <a class="smlab-info__logo">
-          <img src="../../assets/logo/logo-smart-lab-white.svg" alt="logo" height="55" width="55" />
+          <img
+            src="../../assets/logo/logo-smart-lab-white.svg"
+            alt="logo"
+            height="55"
+            width="55"
+          />
         </a>
         <div class="smlab-info__description">
           <h1>Smart Lab</h1>
@@ -89,30 +115,74 @@
       </div>
       <div class="networks">
         <div class="icons">
-          <a href="https://www.facebook.com/SmartLabEPN" class="social-icon" target="_blank">
-            <img src="../../assets/icons-networks/in-facebook.svg" alt="facebook-logo" height="40" width="40" />
+          <a
+            href="https://www.facebook.com/SmartLabEPN"
+            class="social-icon"
+            target="_blank"
+          >
+            <img
+              src="../../assets/icons-networks/in-facebook.svg"
+              alt="facebook-logo"
+              height="40"
+              width="40"
+            />
           </a>
-          <a href="https://www.instagram.com/smartlabepn/" class="social-icon" target="_blank">
-            <img src="../../assets/icons-networks/in-instagram.svg" alt="instagram-logo" height="40" width="40" />
+          <a
+            href="https://www.instagram.com/smartlabepn/"
+            class="social-icon"
+            target="_blank"
+          >
+            <img
+              src="../../assets/icons-networks/in-instagram.svg"
+              alt="instagram-logo"
+              height="40"
+              width="40"
+            />
           </a>
-          <a href="https://www.linkedin.com/company/smartlabepn/" class="social-icon" target="_blank">
-            <img src="../../assets/icons-networks/in-linkedin.svg" alt="linkedin-logo" height="40" width="40" />
+          <a
+            href="https://www.linkedin.com/company/smartlabepn/"
+            class="social-icon"
+            target="_blank"
+          >
+            <img
+              src="../../assets/icons-networks/in-linkedin.svg"
+              alt="linkedin-logo"
+              height="40"
+              width="40"
+            />
           </a>
-          <a href="https://github.com/Smart-Lab-EPN" class="social-icon" target="_blank">
-            <img src="../../assets/icons-networks/in-github.svg" alt="github-logo" height="40" width="40" />
+          <a
+            href="https://github.com/Smart-Lab-EPN"
+            class="social-icon"
+            target="_blank"
+          >
+            <img
+              src="../../assets/icons-networks/in-github.svg"
+              alt="github-logo"
+              height="40"
+              width="40"
+            />
           </a>
         </div>
       </div>
       <div class="links">
         <div class="office">
           <a class="mail" href="mailto:smartlab@epn.edu.ec">
-            <img src="../../assets/icons/i-mail-white.svg" alt="i-mail-white" height="18"
-              width="20" />smartlab___epn.edu.ec
+            <img
+              src="../../assets/icons/i-mail-white.svg"
+              alt="i-mail-white"
+              height="18"
+              width="20"
+            />smartlab___epn.edu.ec
           </a>
           <a class="location">
-            <img src="../../assets/icons/i-location-white.svg" alt="i-location-white" height="20" width="16" />Edificio
-            20,
-            Facultad de Sistemas, Escuela Politécnica Nacional, Quito, Ecuador
+            <img
+              src="../../assets/icons/i-location-white.svg"
+              alt="i-location-white"
+              height="20"
+              width="16"
+            />Edificio 20, Facultad de Sistemas, Escuela Politécnica Nacional,
+            Quito, Ecuador
           </a>
         </div>
       </div>
@@ -123,5 +193,4 @@
       </div>
     </footer>
   </section>
-
 </div>

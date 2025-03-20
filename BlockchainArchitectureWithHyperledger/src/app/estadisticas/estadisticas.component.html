@@ -5,7 +5,7 @@
       <div class="logo-section">
         <a href=""> <!-- colocar el link de la pagina web de SmartLab -->
           <svg width="97" height="auto" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo"
-            style="margin-left: 65px;">
+            style="margin-left: 30px;">
             <path
               d="M45.5 91C70.629 91 91 70.629 91 45.5C91 20.371 70.629 0 45.5 0C20.371 0 0 20.371 0 45.5C0 70.629 20.371 91 45.5 91Z"
               fill="#22376B" />
@@ -31,9 +31,9 @@
       </div>
       <nav class="navbar">
         <ul class="nav-links">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="estadisticas" class="btn-nav">Estadísticas</a></li>
-          <li><a (click)="redirectTo('acercaDe')">Acerca de</a></li>
+          <li><a href="#" class="btn-nav">Inicio</a></li>
+          <li><a href="estadisticas" class="btn-nav-disabled">Estadísticas</a></li>
+          <li><a (click)="redirectTo('acercaDe')" class="btn-nav-disabled">Acerca de</a></li>
         </ul>
       </nav>
     </div>
@@ -112,7 +112,12 @@
     <footer class="top">
       <div class="smlab-info">
         <a class="smlab-info__logo">
-          <img src="../../assets/logo/logo-smart-lab-white.svg" alt="logo" height="55" width="55" />
+          <img
+            src="../../assets/logo/logo-smart-lab-white.svg"
+            alt="logo"
+            height="55"
+            width="55"
+          />
         </a>
         <div class="smlab-info__description">
           <h1>Smart Lab</h1>
@@ -121,30 +126,74 @@
       </div>
       <div class="networks">
         <div class="icons">
-          <a href="https://www.facebook.com/SmartLabEPN" class="social-icon" target="_blank">
-            <img src="../../assets/icons-networks/in-facebook.svg" alt="facebook-logo" height="40" width="40" />
+          <a
+            href="https://www.facebook.com/SmartLabEPN"
+            class="social-icon"
+            target="_blank"
+          >
+            <img
+              src="../../assets/icons-networks/in-facebook.svg"
+              alt="facebook-logo"
+              height="40"
+              width="40"
+            />
           </a>
-          <a href="https://www.instagram.com/smartlabepn/" class="social-icon" target="_blank">
-            <img src="../../assets/icons-networks/in-instagram.svg" alt="instagram-logo" height="40" width="40" />
+          <a
+            href="https://www.instagram.com/smartlabepn/"
+            class="social-icon"
+            target="_blank"
+          >
+            <img
+              src="../../assets/icons-networks/in-instagram.svg"
+              alt="instagram-logo"
+              height="40"
+              width="40"
+            />
           </a>
-          <a href="https://www.linkedin.com/company/smartlabepn/" class="social-icon" target="_blank">
-            <img src="../../assets/icons-networks/in-linkedin.svg" alt="linkedin-logo" height="40" width="40" />
+          <a
+            href="https://www.linkedin.com/company/smartlabepn/"
+            class="social-icon"
+            target="_blank"
+          >
+            <img
+              src="../../assets/icons-networks/in-linkedin.svg"
+              alt="linkedin-logo"
+              height="40"
+              width="40"
+            />
           </a>
-          <a href="https://github.com/Smart-Lab-EPN" class="social-icon" target="_blank">
-            <img src="../../assets/icons-networks/in-github.svg" alt="github-logo" height="40" width="40" />
+          <a
+            href="https://github.com/Smart-Lab-EPN"
+            class="social-icon"
+            target="_blank"
+          >
+            <img
+              src="../../assets/icons-networks/in-github.svg"
+              alt="github-logo"
+              height="40"
+              width="40"
+            />
           </a>
         </div>
       </div>
       <div class="links">
         <div class="office">
           <a class="mail" href="mailto:smartlab@epn.edu.ec">
-            <img src="../../assets/icons/i-mail-white.svg" alt="i-mail-white" height="18"
-              width="20" />smartlab___epn.edu.ec
+            <img
+              src="../../assets/icons/i-mail-white.svg"
+              alt="i-mail-white"
+              height="18"
+              width="20"
+            />smartlab___epn.edu.ec
           </a>
           <a class="location">
-            <img src="../../assets/icons/i-location-white.svg" alt="i-location-white" height="20" width="16" />Edificio
-            20,
-            Facultad de Sistemas, Escuela Politécnica Nacional, Quito, Ecuador
+            <img
+              src="../../assets/icons/i-location-white.svg"
+              alt="i-location-white"
+              height="20"
+              width="16"
+            />Edificio 20, Facultad de Sistemas, Escuela Politécnica Nacional,
+            Quito, Ecuador
           </a>
         </div>
       </div>
@@ -155,5 +204,4 @@
       </div>
     </footer>
   </section>
-
 </div>
